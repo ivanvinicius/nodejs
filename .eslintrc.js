@@ -9,8 +9,20 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
   rules: {
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        custom: {
+          regex: '^I[A-Z]',
+          match: true,
+        },
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
@@ -20,6 +32,13 @@ module.exports = {
         trailingComma: 'all',
         arrowParens: 'always',
         semi: false,
+      },
+    ],
+    'import-helpers/order-imports': [
+      'warn',
+      {
+        newlinesBetween: 'always',
+        groups: [['/^express/', 'module'], 'parent', 'sibling', 'index'],
       },
     ],
   },
