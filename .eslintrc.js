@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
   rules: {
+    'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
     '@typescript-eslint/naming-convention': [
       'error',

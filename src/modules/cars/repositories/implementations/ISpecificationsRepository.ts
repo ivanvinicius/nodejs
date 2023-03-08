@@ -1,4 +1,4 @@
-import { Specification } from '../Model/Specification'
+import { Specification } from '../../models/Specification'
 
 interface ICreateSpecificationDTO {
   name: string
