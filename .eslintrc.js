@@ -11,6 +11,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
   rules: {
+    'array-callback-return': 'off',
+    'no-undef': 'off',
     'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
     '@typescript-eslint/naming-convention': [
