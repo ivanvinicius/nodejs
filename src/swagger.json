@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "RentX",
+    "description": "RentX api",
+    "version": "0.1",
+    "contact": {
+      "email": "bordela-do-eno@gmail.com"
+    }
+  }
+}
