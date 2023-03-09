@@ -1,3 +1,5 @@
+import 'reflect-metadata' // must be imported to use tsyringe
+
 import express from 'express'
 import swaggerUi from 'swagger-ui-express'
 
@@ -5,6 +7,8 @@ import { router } from './routes'
 import swaggerFile from './swagger.json'
 
 import './database'
+
+import './shared/containers' // must be below of database import
 
 const app = express()
 
