@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
   rules: {
+    'no-return-await': 'warn',
     'array-callback-return': 'off',
     'no-undef': 'off',
     'no-use-before-define': 'off',
